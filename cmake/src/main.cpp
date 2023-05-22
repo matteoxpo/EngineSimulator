@@ -3,8 +3,12 @@
 #include <typeinfo>
 #include <vector>
 
-// #include "InternalCombucstionEngineData.hpp"
-#include "EngineModel.hpp"
+// #include "EngineModel.hpp"
+#include "AEngine.hpp"
+#include "EngineTestStand.hpp"
+#include "InternalCombucstionEngine.hpp"
+#include "InternalCombucstionEngineDataSerializer.hpp"
+
 int main() {
   double I = 10;
   std::vector<double> M = {20, 75, 100, 105, 75, 0};
@@ -16,19 +20,15 @@ int main() {
   double TEngine = 20;
   double TAir = 20;
   InternalCombucstionEngineData data(I, M, V, T, Hm, Hv, C, TEngine, TAir);
-  InternalCombucstionEngiene engine(data);
 
-  AEngineData newdata =
-      std::move(engine.StartSimulation(UntilOverheating, 100));
-  AEngineData* basePtr = &newdata;
+  std::unique_ptr<AEngine> engine =
+      std::make_unique<InternalCombucstionEngiene>(data);
 
-  InternalCombucstionEngineData* derivedPtr =
-      static_cast<InternalCombucstionEngineData*>(basePtr);
-  if (derivedPtr != nullptr) {
-    std::cout << derivedPtr->TRunned;
-  } else {
-    std::cout << "Failure\n";
-  }
+  std::shared_ptr<AEngineDataSerializer> serializer =
+      std::make_shared<InternalCombucstionEngineDataSerializer>(&std::cout);
+
+  EngineTestStand stand(engine, serializer);
+  auto x = stand.RunTest(UntilOverheating);
 
   return 0;
 }

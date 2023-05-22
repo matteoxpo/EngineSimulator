@@ -1,12 +1,12 @@
 #include "InternalCombucstionEngine.hpp"
 
-#include <iostream>
-
 InternalCombucstionEngiene::InternalCombucstionEngiene(
     const InternalCombucstionEngineData& _data)
-    : data(_data) {}
+    : data(_data) {
+  this->type = InternalCombucstion;
+}
 
-AEngineData InternalCombucstionEngiene::StartSimulation(
+AEngineData* InternalCombucstionEngiene::StartSimulation(
     SimulationWorkingMode mode, double time) {
   double v = this->data.V[0];
   double m = this->data.M[0];
@@ -27,7 +27,7 @@ AEngineData InternalCombucstionEngiene::StartSimulation(
       }
       break;
   }
-  return (InternalCombucstionEngineData(this->data));
+  return new InternalCombucstionEngineData(this->data);
 }
 
 double InternalCombucstionEngiene::FindVc() {
@@ -36,7 +36,7 @@ double InternalCombucstionEngiene::FindVc() {
 
 double InternalCombucstionEngiene::FindVh(const int& index) {
   return this->data.M[index] * this->data.Hm +
-         pow(this->data.V[index], 2) * this->data.Hv;
+         this->data.V[index] * this->data.V[index] * this->data.Hv;
 }
 
 void InternalCombucstionEngiene::SimulateStep(double& v, double& m, double& a,

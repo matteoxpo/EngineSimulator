@@ -1,5 +1,5 @@
 #pragma once
-#include <cmath>
+#include <memory>
 #include <vector>
 
 #include "../interfaces/AEngine.hpp"
@@ -16,6 +16,6 @@ class InternalCombucstionEngiene : public AEngine {
 
  public:
   InternalCombucstionEngiene(const InternalCombucstionEngineData& _data);
-  AEngineData StartSimulation(SimulationWorkingMode mode,
-                              double time = -1) override;
+  AEngineData* StartSimulation(SimulationWorkingMode mode,
+                               double time = -1) override;
 };
