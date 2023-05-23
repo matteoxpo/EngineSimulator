@@ -1,7 +1,7 @@
 engine_lib_tests/CMakeFiles/engines_tests.dir/entity/EngineTestStand.cpp.o: \
- /home/xpomin/Prog/EngineSimulator/cmake/engine_lib_tests/entity/EngineTestStand.cpp \
+ /home/xpomin/Prog/EngineSimulator/engine_lib_tests/entity/EngineTestStand.cpp \
  /usr/include/stdc-predef.h \
- /home/xpomin/Prog/EngineSimulator/cmake/engine_lib_tests/entity/EngineTestStand.hpp \
+ /home/xpomin/Prog/EngineSimulator/engine_lib_tests/entity/EngineTestStand.hpp \
  /usr/include/c++/11/fstream /usr/include/c++/11/istream \
  /usr/include/c++/11/ios /usr/include/c++/11/iosfwd \
  /usr/include/x86_64-linux-gnu/c++/11/bits/c++config.h \
@@ -206,7 +206,7 @@ engine_lib_tests/CMakeFiles/engines_tests.dir/entity/EngineTestStand.cpp.o: \
  /usr/include/c++/11/pstl/glue_memory_defs.h \
  /usr/include/c++/11/pstl/execution_defs.h /usr/include/c++/11/optional \
  /usr/include/c++/11/bits/enable_special_members.h \
- /home/xpomin/Prog/EngineSimulator/cmake/engine_lib_tests/entity/../interfaces/AEngineDataSerializer.hpp \
+ /home/xpomin/Prog/EngineSimulator/engine_lib_tests/entity/../interfaces/AEngineDataSerializer.hpp \
  /usr/include/boost/property_tree/json_parser.hpp \
  /usr/include/boost/property_tree/ptree.hpp \
  /usr/include/boost/property_tree/ptree_fwd.hpp \
@@ -915,11 +915,10 @@ engine_lib_tests/CMakeFiles/engines_tests.dir/entity/EngineTestStand.cpp.o: \
  /usr/include/boost/property_tree/json_parser/detail/standard_callbacks.hpp \
  /usr/include/boost/property_tree/json_parser/detail/write.hpp \
  /usr/include/c++/11/iomanip /usr/include/c++/11/bits/quoted_string.h \
- /home/xpomin/Prog/EngineSimulator/cmake/engine_lib_tests/../engine_lib/entity/InternalCombucstionEngineData.hpp \
- /home/xpomin/Prog/EngineSimulator/cmake/engine_lib_tests/../engine_lib/entity/../interfaces/AEngineData.hpp \
- /home/xpomin/Prog/EngineSimulator/cmake/engine_lib_tests/entity/../interfaces/AEngineTestStand.hpp \
- /home/xpomin/Prog/EngineSimulator/cmake/engine_lib_tests/entity/../interfaces/../EngineTestType.hpp \
- /home/xpomin/Prog/EngineSimulator/cmake/engine_lib_tests/../engine_lib/interfaces/AEngine.hpp \
- /home/xpomin/Prog/EngineSimulator/cmake/engine_lib_tests/../engine_lib/interfaces/../entity/EngineType.hpp \
- /home/xpomin/Prog/EngineSimulator/cmake/engine_lib/EngineModel.hpp \
- /home/xpomin/Prog/EngineSimulator/cmake/engine_lib_tests/entity/exceptions/NotImplementedException.hpp
+ /home/xpomin/Prog/EngineSimulator/engine_lib_tests/../engine_lib/entity/InternalCombucstionEngineData.hpp \
+ /home/xpomin/Prog/EngineSimulator/engine_lib_tests/../engine_lib/entity/../interfaces/AEngineData.hpp \
+ /home/xpomin/Prog/EngineSimulator/engine_lib_tests/entity/../interfaces/AEngineTestStand.hpp \
+ /home/xpomin/Prog/EngineSimulator/engine_lib_tests/entity/../interfaces/../EngineTestType.hpp \
+ /home/xpomin/Prog/EngineSimulator/engine_lib_tests/../engine_lib/interfaces/AEngine.hpp \
+ /home/xpomin/Prog/EngineSimulator/engine_lib_tests/../engine_lib/interfaces/../entity/EngineType.hpp \
+ /home/xpomin/Prog/EngineSimulator/engine_lib/EngineModel.hpp

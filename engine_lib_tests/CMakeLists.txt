@@ -11,7 +11,8 @@ add_library(engines_tests STATIC
     entity/serializer/InternalCombucstionEngineDataSerializer.hpp
 
     interfaces/AEngineDataSerializer.hpp
-    interfaces/ATestStand.hpp
+    interfaces/AEngineTestStand.hpp
+
 )
 
 target_include_directories(

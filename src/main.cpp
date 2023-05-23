@@ -8,7 +8,6 @@
 #include "EngineTestStand.hpp"
 #include "InternalCombucstionEngine.hpp"
 #include "InternalCombucstionEngineDataSerializer.hpp"
-
 int main() {
   // double I = 10;
   // std::vector<double> M = {20, 75, 100, 105, 75, 0};

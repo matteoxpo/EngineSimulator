@@ -4,7 +4,7 @@
 # compile CXX with /usr/bin/c++
 CXX_DEFINES = 
 
-CXX_INCLUDES = -I/home/xpomin/Prog/EngineSimulator/cmake/engine_lib -I/home/xpomin/Prog/EngineSimulator/cmake/engine_lib_tests -I/home/xpomin/Prog/EngineSimulator/cmake/src/../engine_lib -I/home/xpomin/Prog/EngineSimulator/cmake/src/../engine_lib/interfaces -I/home/xpomin/Prog/EngineSimulator/cmake/src/../engine_lib/entity -I/home/xpomin/Prog/EngineSimulator/cmake/src/../engine_lib_tests/entity -I/home/xpomin/Prog/EngineSimulator/cmake/src/../engine_lib_tests/entity/serializer -I/home/xpomin/Prog/EngineSimulator/cmake/src/../engine_lib_tests/interfaces
+CXX_INCLUDES = -I/home/xpomin/Prog/EngineSimulator/engine_lib -I/home/xpomin/Prog/EngineSimulator/engine_lib_tests -I/home/xpomin/Prog/EngineSimulator/src/../engine_lib -I/home/xpomin/Prog/EngineSimulator/src/../engine_lib/interfaces -I/home/xpomin/Prog/EngineSimulator/src/../engine_lib/entity -I/home/xpomin/Prog/EngineSimulator/src/../engine_lib_tests/entity -I/home/xpomin/Prog/EngineSimulator/src/../engine_lib_tests/entity/serializer -I/home/xpomin/Prog/EngineSimulator/src/../engine_lib_tests/interfaces
 
 CXX_FLAGS = -std=gnu++20
 

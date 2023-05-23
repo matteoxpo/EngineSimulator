@@ -4,7 +4,7 @@
 # compile CXX with /usr/bin/c++
 CXX_DEFINES = 
 
-CXX_INCLUDES = -I/home/xpomin/Prog/EngineSimulator/cmake/engine_lib -I/home/xpomin/Prog/EngineSimulator/cmake/engine_lib_tests/../engine_lib -I/home/xpomin/Prog/EngineSimulator/cmake/engine_lib_tests/../engine_lib/interfaces -I/home/xpomin/Prog/EngineSimulator/cmake/engine_lib_tests/../engine_lib/entity
+CXX_INCLUDES = -I/home/xpomin/Prog/EngineSimulator/engine_lib -I/home/xpomin/Prog/EngineSimulator/engine_lib_tests/../engine_lib -I/home/xpomin/Prog/EngineSimulator/engine_lib_tests/../engine_lib/interfaces -I/home/xpomin/Prog/EngineSimulator/engine_lib_tests/../engine_lib/entity
 
 CXX_FLAGS = -std=gnu++20
 

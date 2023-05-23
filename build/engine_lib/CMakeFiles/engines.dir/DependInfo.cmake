@@ -8,8 +8,8 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
-  "/home/xpomin/Prog/EngineSimulator/cmake/engine_lib/entity/InternalCombucstionEngine.cpp" "engine_lib/CMakeFiles/engines.dir/entity/InternalCombucstionEngine.cpp.o" "gcc" "engine_lib/CMakeFiles/engines.dir/entity/InternalCombucstionEngine.cpp.o.d"
-  "/home/xpomin/Prog/EngineSimulator/cmake/engine_lib/entity/InternalCombucstionEngineData.cpp" "engine_lib/CMakeFiles/engines.dir/entity/InternalCombucstionEngineData.cpp.o" "gcc" "engine_lib/CMakeFiles/engines.dir/entity/InternalCombucstionEngineData.cpp.o.d"
+  "/home/xpomin/Prog/EngineSimulator/engine_lib/entity/InternalCombucstionEngine.cpp" "engine_lib/CMakeFiles/engines.dir/entity/InternalCombucstionEngine.cpp.o" "gcc" "engine_lib/CMakeFiles/engines.dir/entity/InternalCombucstionEngine.cpp.o.d"
+  "/home/xpomin/Prog/EngineSimulator/engine_lib/entity/InternalCombucstionEngineData.cpp" "engine_lib/CMakeFiles/engines.dir/entity/InternalCombucstionEngineData.cpp.o" "gcc" "engine_lib/CMakeFiles/engines.dir/entity/InternalCombucstionEngineData.cpp.o.d"
   )
 
 # Targets to which this target links.

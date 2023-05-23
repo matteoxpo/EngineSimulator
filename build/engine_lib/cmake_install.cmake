@@ -1,4 +1,4 @@
-# Install script for directory: /home/xpomin/Prog/EngineSimulator/cmake/engine_lib
+# Install script for directory: /home/xpomin/Prog/EngineSimulator/engine_lib
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)

@@ -27,7 +27,7 @@ std::optional<std::shared_ptr<AEngineData>> EngineTestStand::RunTest(
   }
 
   AEngineData* baseData = this->engine->GetEngineData();
-  this->seriazlier->serialize();
+  // this->seriazlier->serialize();
   if (returnData) {
     return std::optional<std::shared_ptr<AEngineData>>(baseData);
   }

@@ -1020,14 +1020,11 @@ engine_lib_tests/CMakeFiles/engines_tests.dir/entity/EngineTestStand.cpp.o: ../e
   ../engine_lib_tests/EngineTestType.hpp \
   ../engine_lib/interfaces/AEngine.hpp \
   ../engine_lib/entity/EngineType.hpp \
-  ../engine_lib/EngineModel.hpp \
-  ../engine_lib_tests/entity/exceptions/NotImplementedException.hpp
+  ../engine_lib/EngineModel.hpp
 
 engine_lib_tests/CMakeFiles/engines_tests.dir/entity/serializer/InternalCombucstionEngineDataSerializer.cpp.o: ../engine_lib_tests/entity/serializer/InternalCombucstionEngineDataSerializer.cpp \
   /usr/include/stdc-predef.h \
   ../engine_lib_tests/entity/serializer/InternalCombucstionEngineDataSerializer.hpp \
-  ../engine_lib_tests/interfaces/AEngineDataSerializer.hpp \
-  /usr/include/boost/property_tree/json_parser.hpp \
   /usr/include/boost/property_tree/ptree.hpp \
   /usr/include/boost/property_tree/ptree_fwd.hpp \
   /usr/include/boost/config.hpp \
@@ -1902,6 +1899,8 @@ engine_lib_tests/CMakeFiles/engines_tests.dir/entity/serializer/InternalCombucst
   /usr/include/boost/multi_index/detail/duplicates_iterator.hpp \
   /usr/include/boost/multi_index/member.hpp \
   /usr/include/boost/property_tree/detail/ptree_implementation.hpp \
+  ../engine_lib_tests/interfaces/AEngineDataSerializer.hpp \
+  /usr/include/boost/property_tree/json_parser.hpp \
   /usr/include/boost/property_tree/json_parser/error.hpp \
   /usr/include/boost/property_tree/detail/file_parser_error.hpp \
   /usr/include/boost/property_tree/json_parser/detail/read.hpp \
@@ -2040,8 +2039,6 @@ engine_lib_tests/CMakeFiles/engines_tests.dir/entity/serializer/InternalCombucst
 
 
 ../engine_lib_tests/entity/serializer/InternalCombucstionEngineDataSerializer.hpp:
-
-../engine_lib_tests/entity/exceptions/NotImplementedException.hpp:
 
 ../engine_lib/EngineModel.hpp:
 

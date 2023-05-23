@@ -57,10 +57,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/xpomin/Prog/EngineSimulator/cmake
+CMAKE_SOURCE_DIR = /home/xpomin/Prog/EngineSimulator
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/xpomin/Prog/EngineSimulator/cmake/build
+CMAKE_BINARY_DIR = /home/xpomin/Prog/EngineSimulator/build
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -87,14 +87,14 @@ rebuild_cache/fast: rebuild_cache
 
 # The main all target
 all: cmake_check_build_system
-	cd /home/xpomin/Prog/EngineSimulator/cmake/build && $(CMAKE_COMMAND) -E cmake_progress_start /home/xpomin/Prog/EngineSimulator/cmake/build/CMakeFiles /home/xpomin/Prog/EngineSimulator/cmake/build/engine_lib//CMakeFiles/progress.marks
-	cd /home/xpomin/Prog/EngineSimulator/cmake/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 engine_lib/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/xpomin/Prog/EngineSimulator/cmake/build/CMakeFiles 0
+	cd /home/xpomin/Prog/EngineSimulator/build && $(CMAKE_COMMAND) -E cmake_progress_start /home/xpomin/Prog/EngineSimulator/build/CMakeFiles /home/xpomin/Prog/EngineSimulator/build/engine_lib//CMakeFiles/progress.marks
+	cd /home/xpomin/Prog/EngineSimulator/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 engine_lib/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/xpomin/Prog/EngineSimulator/build/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
 clean:
-	cd /home/xpomin/Prog/EngineSimulator/cmake/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 engine_lib/clean
+	cd /home/xpomin/Prog/EngineSimulator/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 engine_lib/clean
 .PHONY : clean
 
 # The main clean target
@@ -103,22 +103,22 @@ clean/fast: clean
 
 # Prepare targets for installation.
 preinstall: all
-	cd /home/xpomin/Prog/EngineSimulator/cmake/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 engine_lib/preinstall
+	cd /home/xpomin/Prog/EngineSimulator/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 engine_lib/preinstall
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall/fast:
-	cd /home/xpomin/Prog/EngineSimulator/cmake/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 engine_lib/preinstall
+	cd /home/xpomin/Prog/EngineSimulator/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 engine_lib/preinstall
 .PHONY : preinstall/fast
 
 # clear depends
 depend:
-	cd /home/xpomin/Prog/EngineSimulator/cmake/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
+	cd /home/xpomin/Prog/EngineSimulator/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
 
 # Convenience name for target.
 engine_lib/CMakeFiles/engines.dir/rule:
-	cd /home/xpomin/Prog/EngineSimulator/cmake/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 engine_lib/CMakeFiles/engines.dir/rule
+	cd /home/xpomin/Prog/EngineSimulator/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 engine_lib/CMakeFiles/engines.dir/rule
 .PHONY : engine_lib/CMakeFiles/engines.dir/rule
 
 # Convenience name for target.
@@ -127,7 +127,7 @@ engines: engine_lib/CMakeFiles/engines.dir/rule
 
 # fast build rule for target.
 engines/fast:
-	cd /home/xpomin/Prog/EngineSimulator/cmake/build && $(MAKE) $(MAKESILENT) -f engine_lib/CMakeFiles/engines.dir/build.make engine_lib/CMakeFiles/engines.dir/build
+	cd /home/xpomin/Prog/EngineSimulator/build && $(MAKE) $(MAKESILENT) -f engine_lib/CMakeFiles/engines.dir/build.make engine_lib/CMakeFiles/engines.dir/build
 .PHONY : engines/fast
 
 entity/InternalCombucstionEngine.o: entity/InternalCombucstionEngine.cpp.o
@@ -135,7 +135,7 @@ entity/InternalCombucstionEngine.o: entity/InternalCombucstionEngine.cpp.o
 
 # target to build an object file
 entity/InternalCombucstionEngine.cpp.o:
-	cd /home/xpomin/Prog/EngineSimulator/cmake/build && $(MAKE) $(MAKESILENT) -f engine_lib/CMakeFiles/engines.dir/build.make engine_lib/CMakeFiles/engines.dir/entity/InternalCombucstionEngine.cpp.o
+	cd /home/xpomin/Prog/EngineSimulator/build && $(MAKE) $(MAKESILENT) -f engine_lib/CMakeFiles/engines.dir/build.make engine_lib/CMakeFiles/engines.dir/entity/InternalCombucstionEngine.cpp.o
 .PHONY : entity/InternalCombucstionEngine.cpp.o
 
 entity/InternalCombucstionEngine.i: entity/InternalCombucstionEngine.cpp.i
@@ -143,7 +143,7 @@ entity/InternalCombucstionEngine.i: entity/InternalCombucstionEngine.cpp.i
 
 # target to preprocess a source file
 entity/InternalCombucstionEngine.cpp.i:
-	cd /home/xpomin/Prog/EngineSimulator/cmake/build && $(MAKE) $(MAKESILENT) -f engine_lib/CMakeFiles/engines.dir/build.make engine_lib/CMakeFiles/engines.dir/entity/InternalCombucstionEngine.cpp.i
+	cd /home/xpomin/Prog/EngineSimulator/build && $(MAKE) $(MAKESILENT) -f engine_lib/CMakeFiles/engines.dir/build.make engine_lib/CMakeFiles/engines.dir/entity/InternalCombucstionEngine.cpp.i
 .PHONY : entity/InternalCombucstionEngine.cpp.i
 
 entity/InternalCombucstionEngine.s: entity/InternalCombucstionEngine.cpp.s
@@ -151,7 +151,7 @@ entity/InternalCombucstionEngine.s: entity/InternalCombucstionEngine.cpp.s
 
 # target to generate assembly for a file
 entity/InternalCombucstionEngine.cpp.s:
-	cd /home/xpomin/Prog/EngineSimulator/cmake/build && $(MAKE) $(MAKESILENT) -f engine_lib/CMakeFiles/engines.dir/build.make engine_lib/CMakeFiles/engines.dir/entity/InternalCombucstionEngine.cpp.s
+	cd /home/xpomin/Prog/EngineSimulator/build && $(MAKE) $(MAKESILENT) -f engine_lib/CMakeFiles/engines.dir/build.make engine_lib/CMakeFiles/engines.dir/entity/InternalCombucstionEngine.cpp.s
 .PHONY : entity/InternalCombucstionEngine.cpp.s
 
 entity/InternalCombucstionEngineData.o: entity/InternalCombucstionEngineData.cpp.o
@@ -159,7 +159,7 @@ entity/InternalCombucstionEngineData.o: entity/InternalCombucstionEngineData.cpp
 
 # target to build an object file
 entity/InternalCombucstionEngineData.cpp.o:
-	cd /home/xpomin/Prog/EngineSimulator/cmake/build && $(MAKE) $(MAKESILENT) -f engine_lib/CMakeFiles/engines.dir/build.make engine_lib/CMakeFiles/engines.dir/entity/InternalCombucstionEngineData.cpp.o
+	cd /home/xpomin/Prog/EngineSimulator/build && $(MAKE) $(MAKESILENT) -f engine_lib/CMakeFiles/engines.dir/build.make engine_lib/CMakeFiles/engines.dir/entity/InternalCombucstionEngineData.cpp.o
 .PHONY : entity/InternalCombucstionEngineData.cpp.o
 
 entity/InternalCombucstionEngineData.i: entity/InternalCombucstionEngineData.cpp.i
@@ -167,7 +167,7 @@ entity/InternalCombucstionEngineData.i: entity/InternalCombucstionEngineData.cpp
 
 # target to preprocess a source file
 entity/InternalCombucstionEngineData.cpp.i:
-	cd /home/xpomin/Prog/EngineSimulator/cmake/build && $(MAKE) $(MAKESILENT) -f engine_lib/CMakeFiles/engines.dir/build.make engine_lib/CMakeFiles/engines.dir/entity/InternalCombucstionEngineData.cpp.i
+	cd /home/xpomin/Prog/EngineSimulator/build && $(MAKE) $(MAKESILENT) -f engine_lib/CMakeFiles/engines.dir/build.make engine_lib/CMakeFiles/engines.dir/entity/InternalCombucstionEngineData.cpp.i
 .PHONY : entity/InternalCombucstionEngineData.cpp.i
 
 entity/InternalCombucstionEngineData.s: entity/InternalCombucstionEngineData.cpp.s
@@ -175,7 +175,7 @@ entity/InternalCombucstionEngineData.s: entity/InternalCombucstionEngineData.cpp
 
 # target to generate assembly for a file
 entity/InternalCombucstionEngineData.cpp.s:
-	cd /home/xpomin/Prog/EngineSimulator/cmake/build && $(MAKE) $(MAKESILENT) -f engine_lib/CMakeFiles/engines.dir/build.make engine_lib/CMakeFiles/engines.dir/entity/InternalCombucstionEngineData.cpp.s
+	cd /home/xpomin/Prog/EngineSimulator/build && $(MAKE) $(MAKESILENT) -f engine_lib/CMakeFiles/engines.dir/build.make engine_lib/CMakeFiles/engines.dir/entity/InternalCombucstionEngineData.cpp.s
 .PHONY : entity/InternalCombucstionEngineData.cpp.s
 
 # Help Target
@@ -204,6 +204,6 @@ help:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
-	cd /home/xpomin/Prog/EngineSimulator/cmake/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
+	cd /home/xpomin/Prog/EngineSimulator/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
 .PHONY : cmake_check_build_system
 

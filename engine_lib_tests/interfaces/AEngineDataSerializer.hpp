@@ -21,10 +21,14 @@ class AEngineDataSerializer {
   inline void SetSerializePt(boost::property_tree::ptree&& _serialize_pt) {
     this->serialize_pt = _serialize_pt;
   }
+
+  virtual void SetData(AEngineData* _data) = 0;
+
   virtual AEngineDataSerializer* CreateInstance(
       boost::property_tree::ptree&& _deserialize_pt,
       boost::property_tree::ptree&& _serialize_pt) = 0;
 
-  virtual void serialize() = 0;
+  virtual void serialize(
+      std::basic_ostream<typename std::ostream::char_type>& stream) = 0;
   virtual void deserialize() = 0;
 };

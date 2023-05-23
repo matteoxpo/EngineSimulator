@@ -1,7 +1,7 @@
 engine_lib/CMakeFiles/engines.dir/entity/InternalCombucstionEngine.cpp.o: \
- /home/xpomin/Prog/EngineSimulator/cmake/engine_lib/entity/InternalCombucstionEngine.cpp \
+ /home/xpomin/Prog/EngineSimulator/engine_lib/entity/InternalCombucstionEngine.cpp \
  /usr/include/stdc-predef.h \
- /home/xpomin/Prog/EngineSimulator/cmake/engine_lib/entity/InternalCombucstionEngine.hpp \
+ /home/xpomin/Prog/EngineSimulator/engine_lib/entity/InternalCombucstionEngine.hpp \
  /usr/include/c++/11/memory /usr/include/c++/11/bits/stl_algobase.h \
  /usr/include/x86_64-linux-gnu/c++/11/bits/c++config.h \
  /usr/include/x86_64-linux-gnu/c++/11/bits/os_defines.h \
@@ -202,7 +202,7 @@ engine_lib/CMakeFiles/engines.dir/entity/InternalCombucstionEngine.cpp.o: \
  /usr/include/c++/11/bits/stl_vector.h \
  /usr/include/c++/11/bits/stl_bvector.h \
  /usr/include/c++/11/bits/vector.tcc \
- /home/xpomin/Prog/EngineSimulator/cmake/engine_lib/entity/../interfaces/AEngine.hpp \
- /home/xpomin/Prog/EngineSimulator/cmake/engine_lib/entity/../interfaces/../entity/EngineType.hpp \
- /home/xpomin/Prog/EngineSimulator/cmake/engine_lib/entity/../interfaces/AEngineData.hpp \
- /home/xpomin/Prog/EngineSimulator/cmake/engine_lib/entity/InternalCombucstionEngineData.hpp
+ /home/xpomin/Prog/EngineSimulator/engine_lib/entity/../interfaces/AEngine.hpp \
+ /home/xpomin/Prog/EngineSimulator/engine_lib/entity/../interfaces/../entity/EngineType.hpp \
+ /home/xpomin/Prog/EngineSimulator/engine_lib/entity/../interfaces/AEngineData.hpp \
+ /home/xpomin/Prog/EngineSimulator/engine_lib/entity/InternalCombucstionEngineData.hpp

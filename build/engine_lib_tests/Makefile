@@ -57,10 +57,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/xpomin/Prog/EngineSimulator/cmake
+CMAKE_SOURCE_DIR = /home/xpomin/Prog/EngineSimulator
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/xpomin/Prog/EngineSimulator/cmake/build
+CMAKE_BINARY_DIR = /home/xpomin/Prog/EngineSimulator/build
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -87,14 +87,14 @@ rebuild_cache/fast: rebuild_cache
 
 # The main all target
 all: cmake_check_build_system
-	cd /home/xpomin/Prog/EngineSimulator/cmake/build && $(CMAKE_COMMAND) -E cmake_progress_start /home/xpomin/Prog/EngineSimulator/cmake/build/CMakeFiles /home/xpomin/Prog/EngineSimulator/cmake/build/engine_lib_tests//CMakeFiles/progress.marks
-	cd /home/xpomin/Prog/EngineSimulator/cmake/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 engine_lib_tests/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/xpomin/Prog/EngineSimulator/cmake/build/CMakeFiles 0
+	cd /home/xpomin/Prog/EngineSimulator/build && $(CMAKE_COMMAND) -E cmake_progress_start /home/xpomin/Prog/EngineSimulator/build/CMakeFiles /home/xpomin/Prog/EngineSimulator/build/engine_lib_tests//CMakeFiles/progress.marks
+	cd /home/xpomin/Prog/EngineSimulator/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 engine_lib_tests/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/xpomin/Prog/EngineSimulator/build/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
 clean:
-	cd /home/xpomin/Prog/EngineSimulator/cmake/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 engine_lib_tests/clean
+	cd /home/xpomin/Prog/EngineSimulator/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 engine_lib_tests/clean
 .PHONY : clean
 
 # The main clean target
@@ -103,22 +103,22 @@ clean/fast: clean
 
 # Prepare targets for installation.
 preinstall: all
-	cd /home/xpomin/Prog/EngineSimulator/cmake/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 engine_lib_tests/preinstall
+	cd /home/xpomin/Prog/EngineSimulator/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 engine_lib_tests/preinstall
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall/fast:
-	cd /home/xpomin/Prog/EngineSimulator/cmake/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 engine_lib_tests/preinstall
+	cd /home/xpomin/Prog/EngineSimulator/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 engine_lib_tests/preinstall
 .PHONY : preinstall/fast
 
 # clear depends
 depend:
-	cd /home/xpomin/Prog/EngineSimulator/cmake/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
+	cd /home/xpomin/Prog/EngineSimulator/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
 
 # Convenience name for target.
 engine_lib_tests/CMakeFiles/engines_tests.dir/rule:
-	cd /home/xpomin/Prog/EngineSimulator/cmake/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 engine_lib_tests/CMakeFiles/engines_tests.dir/rule
+	cd /home/xpomin/Prog/EngineSimulator/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 engine_lib_tests/CMakeFiles/engines_tests.dir/rule
 .PHONY : engine_lib_tests/CMakeFiles/engines_tests.dir/rule
 
 # Convenience name for target.
@@ -127,7 +127,7 @@ engines_tests: engine_lib_tests/CMakeFiles/engines_tests.dir/rule
 
 # fast build rule for target.
 engines_tests/fast:
-	cd /home/xpomin/Prog/EngineSimulator/cmake/build && $(MAKE) $(MAKESILENT) -f engine_lib_tests/CMakeFiles/engines_tests.dir/build.make engine_lib_tests/CMakeFiles/engines_tests.dir/build
+	cd /home/xpomin/Prog/EngineSimulator/build && $(MAKE) $(MAKESILENT) -f engine_lib_tests/CMakeFiles/engines_tests.dir/build.make engine_lib_tests/CMakeFiles/engines_tests.dir/build
 .PHONY : engines_tests/fast
 
 entity/EngineTestStand.o: entity/EngineTestStand.cpp.o
@@ -135,7 +135,7 @@ entity/EngineTestStand.o: entity/EngineTestStand.cpp.o
 
 # target to build an object file
 entity/EngineTestStand.cpp.o:
-	cd /home/xpomin/Prog/EngineSimulator/cmake/build && $(MAKE) $(MAKESILENT) -f engine_lib_tests/CMakeFiles/engines_tests.dir/build.make engine_lib_tests/CMakeFiles/engines_tests.dir/entity/EngineTestStand.cpp.o
+	cd /home/xpomin/Prog/EngineSimulator/build && $(MAKE) $(MAKESILENT) -f engine_lib_tests/CMakeFiles/engines_tests.dir/build.make engine_lib_tests/CMakeFiles/engines_tests.dir/entity/EngineTestStand.cpp.o
 .PHONY : entity/EngineTestStand.cpp.o
 
 entity/EngineTestStand.i: entity/EngineTestStand.cpp.i
@@ -143,7 +143,7 @@ entity/EngineTestStand.i: entity/EngineTestStand.cpp.i
 
 # target to preprocess a source file
 entity/EngineTestStand.cpp.i:
-	cd /home/xpomin/Prog/EngineSimulator/cmake/build && $(MAKE) $(MAKESILENT) -f engine_lib_tests/CMakeFiles/engines_tests.dir/build.make engine_lib_tests/CMakeFiles/engines_tests.dir/entity/EngineTestStand.cpp.i
+	cd /home/xpomin/Prog/EngineSimulator/build && $(MAKE) $(MAKESILENT) -f engine_lib_tests/CMakeFiles/engines_tests.dir/build.make engine_lib_tests/CMakeFiles/engines_tests.dir/entity/EngineTestStand.cpp.i
 .PHONY : entity/EngineTestStand.cpp.i
 
 entity/EngineTestStand.s: entity/EngineTestStand.cpp.s
@@ -151,7 +151,7 @@ entity/EngineTestStand.s: entity/EngineTestStand.cpp.s
 
 # target to generate assembly for a file
 entity/EngineTestStand.cpp.s:
-	cd /home/xpomin/Prog/EngineSimulator/cmake/build && $(MAKE) $(MAKESILENT) -f engine_lib_tests/CMakeFiles/engines_tests.dir/build.make engine_lib_tests/CMakeFiles/engines_tests.dir/entity/EngineTestStand.cpp.s
+	cd /home/xpomin/Prog/EngineSimulator/build && $(MAKE) $(MAKESILENT) -f engine_lib_tests/CMakeFiles/engines_tests.dir/build.make engine_lib_tests/CMakeFiles/engines_tests.dir/entity/EngineTestStand.cpp.s
 .PHONY : entity/EngineTestStand.cpp.s
 
 entity/serializer/InternalCombucstionEngineDataSerializer.o: entity/serializer/InternalCombucstionEngineDataSerializer.cpp.o
@@ -159,7 +159,7 @@ entity/serializer/InternalCombucstionEngineDataSerializer.o: entity/serializer/I
 
 # target to build an object file
 entity/serializer/InternalCombucstionEngineDataSerializer.cpp.o:
-	cd /home/xpomin/Prog/EngineSimulator/cmake/build && $(MAKE) $(MAKESILENT) -f engine_lib_tests/CMakeFiles/engines_tests.dir/build.make engine_lib_tests/CMakeFiles/engines_tests.dir/entity/serializer/InternalCombucstionEngineDataSerializer.cpp.o
+	cd /home/xpomin/Prog/EngineSimulator/build && $(MAKE) $(MAKESILENT) -f engine_lib_tests/CMakeFiles/engines_tests.dir/build.make engine_lib_tests/CMakeFiles/engines_tests.dir/entity/serializer/InternalCombucstionEngineDataSerializer.cpp.o
 .PHONY : entity/serializer/InternalCombucstionEngineDataSerializer.cpp.o
 
 entity/serializer/InternalCombucstionEngineDataSerializer.i: entity/serializer/InternalCombucstionEngineDataSerializer.cpp.i
@@ -167,7 +167,7 @@ entity/serializer/InternalCombucstionEngineDataSerializer.i: entity/serializer/I
 
 # target to preprocess a source file
 entity/serializer/InternalCombucstionEngineDataSerializer.cpp.i:
-	cd /home/xpomin/Prog/EngineSimulator/cmake/build && $(MAKE) $(MAKESILENT) -f engine_lib_tests/CMakeFiles/engines_tests.dir/build.make engine_lib_tests/CMakeFiles/engines_tests.dir/entity/serializer/InternalCombucstionEngineDataSerializer.cpp.i
+	cd /home/xpomin/Prog/EngineSimulator/build && $(MAKE) $(MAKESILENT) -f engine_lib_tests/CMakeFiles/engines_tests.dir/build.make engine_lib_tests/CMakeFiles/engines_tests.dir/entity/serializer/InternalCombucstionEngineDataSerializer.cpp.i
 .PHONY : entity/serializer/InternalCombucstionEngineDataSerializer.cpp.i
 
 entity/serializer/InternalCombucstionEngineDataSerializer.s: entity/serializer/InternalCombucstionEngineDataSerializer.cpp.s
@@ -175,7 +175,7 @@ entity/serializer/InternalCombucstionEngineDataSerializer.s: entity/serializer/I
 
 # target to generate assembly for a file
 entity/serializer/InternalCombucstionEngineDataSerializer.cpp.s:
-	cd /home/xpomin/Prog/EngineSimulator/cmake/build && $(MAKE) $(MAKESILENT) -f engine_lib_tests/CMakeFiles/engines_tests.dir/build.make engine_lib_tests/CMakeFiles/engines_tests.dir/entity/serializer/InternalCombucstionEngineDataSerializer.cpp.s
+	cd /home/xpomin/Prog/EngineSimulator/build && $(MAKE) $(MAKESILENT) -f engine_lib_tests/CMakeFiles/engines_tests.dir/build.make engine_lib_tests/CMakeFiles/engines_tests.dir/entity/serializer/InternalCombucstionEngineDataSerializer.cpp.s
 .PHONY : entity/serializer/InternalCombucstionEngineDataSerializer.cpp.s
 
 # Help Target
@@ -204,6 +204,6 @@ help:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
-	cd /home/xpomin/Prog/EngineSimulator/cmake/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
+	cd /home/xpomin/Prog/EngineSimulator/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
 .PHONY : cmake_check_build_system
 

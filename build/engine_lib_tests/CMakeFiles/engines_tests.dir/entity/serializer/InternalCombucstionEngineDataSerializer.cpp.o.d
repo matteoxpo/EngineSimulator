@@ -1,9 +1,7 @@
 engine_lib_tests/CMakeFiles/engines_tests.dir/entity/serializer/InternalCombucstionEngineDataSerializer.cpp.o: \
- /home/xpomin/Prog/EngineSimulator/cmake/engine_lib_tests/entity/serializer/InternalCombucstionEngineDataSerializer.cpp \
+ /home/xpomin/Prog/EngineSimulator/engine_lib_tests/entity/serializer/InternalCombucstionEngineDataSerializer.cpp \
  /usr/include/stdc-predef.h \
- /home/xpomin/Prog/EngineSimulator/cmake/engine_lib_tests/entity/serializer/InternalCombucstionEngineDataSerializer.hpp \
- /home/xpomin/Prog/EngineSimulator/cmake/engine_lib_tests/entity/serializer/../../interfaces/AEngineDataSerializer.hpp \
- /usr/include/boost/property_tree/json_parser.hpp \
+ /home/xpomin/Prog/EngineSimulator/engine_lib_tests/entity/serializer/InternalCombucstionEngineDataSerializer.hpp \
  /usr/include/boost/property_tree/ptree.hpp \
  /usr/include/boost/property_tree/ptree_fwd.hpp \
  /usr/include/boost/config.hpp /usr/include/boost/config/user.hpp \
@@ -790,6 +788,8 @@ engine_lib_tests/CMakeFiles/engines_tests.dir/entity/serializer/InternalCombucst
  /usr/include/boost/multi_index/detail/duplicates_iterator.hpp \
  /usr/include/boost/multi_index/member.hpp \
  /usr/include/boost/property_tree/detail/ptree_implementation.hpp \
+ /home/xpomin/Prog/EngineSimulator/engine_lib_tests/entity/serializer/../../interfaces/AEngineDataSerializer.hpp \
+ /usr/include/boost/property_tree/json_parser.hpp \
  /usr/include/boost/property_tree/json_parser/error.hpp \
  /usr/include/boost/property_tree/detail/file_parser_error.hpp \
  /usr/include/boost/property_tree/json_parser/detail/read.hpp \
@@ -917,5 +917,5 @@ engine_lib_tests/CMakeFiles/engines_tests.dir/entity/serializer/InternalCombucst
  /usr/include/x86_64-linux-gnu/c++/11/bits/basic_file.h \
  /usr/include/x86_64-linux-gnu/c++/11/bits/c++io.h \
  /usr/include/c++/11/bits/fstream.tcc \
- /home/xpomin/Prog/EngineSimulator/cmake/engine_lib_tests/../engine_lib/entity/InternalCombucstionEngineData.hpp \
- /home/xpomin/Prog/EngineSimulator/cmake/engine_lib_tests/../engine_lib/entity/../interfaces/AEngineData.hpp
+ /home/xpomin/Prog/EngineSimulator/engine_lib_tests/../engine_lib/entity/InternalCombucstionEngineData.hpp \
+ /home/xpomin/Prog/EngineSimulator/engine_lib_tests/../engine_lib/entity/../interfaces/AEngineData.hpp

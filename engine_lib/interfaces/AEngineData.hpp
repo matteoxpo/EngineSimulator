@@ -8,7 +8,7 @@ struct AEngineData {
   inline AEngineData(double _TEngine, double _TAir, int _runnedTime)
       : TEngine(_TEngine), TAir(_TAir), TRunned(_runnedTime) {}
 
-  AEngineData() = default;
+  // AEngineData() = default;
   AEngineData(const AEngineData& other) = default;
 
   AEngineData(AEngineData&& other) = default;
