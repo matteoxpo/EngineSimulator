@@ -1,46 +1,36 @@
+
 #include "EngineTestStand.hpp"
-
-#include <exception>
-#include <string>
-
-class NotImplementedException : public std::exception {
- public:
-  NotImplementedException(const std::string& message) : message_(message) {}
-
-  virtual const char* what() const noexcept override {
-    return message_.c_str();
-  }
-
- private:
-  std::string message_;
-};
 
 EngineTestStand::EngineTestStand(
     std::unique_ptr<AEngine>& _engine,
     std::shared_ptr<AEngineDataSerializer> _serializer)
-    : engine(_engine.release()), serializer(_serializer) {
+    : AEngineTestStand(_engine, _serializer) {
   if (!this->engine) {
     throw std::invalid_argument("EngineTestStand: engine nullptr");
   }
 }
 
-std::shared_ptr<AEngineData> EngineTestStand::RunTest(
-    SimulationWorkingMode mode, double t) {
-  AEngineData* baseData = this->engine->StartSimulation(mode, t);
-  std::shared_ptr<InternalCombucstionEngineData> internalData;
-  /*
-  std::unique_ptr<ElectroEngineData> electroData;
-  */
-  switch (this->engine->getType()) {
-    case Electro:
-      throw NotImplementedException("Electro is not implemented");
+std::optional<std::shared_ptr<AEngineData>> EngineTestStand::RunTest(
+    EngineTestType testType, double time, bool returnData) {
+  this->engine->ResetData();
+  switch (testType) {
+    case SimulateToTime:
+      this->engine->SimulateTime(time);
       break;
-    case InternalCombucstion:
+    case SimulateUntilOverheating:
+      while (!this->engine->IsOverheating()) {
+        this->engine->SimulateStep();
+      }
     default:
-      internalData = std::move(std::shared_ptr<InternalCombucstionEngineData>(
-          dynamic_cast<InternalCombucstionEngineData*>(baseData)));
-      this->serializer->Serialize(internalData);
-      return internalData;
+      throw std::invalid_argument("EngineTestStand: RunTest invalid test mode");
       break;
   }
+
+  AEngineData* baseData = this->engine->GetEngineData();
+  this->seriazlier->serialize();
+  if (returnData) {
+    return std::optional<std::shared_ptr<AEngineData>>(baseData);
+  }
+  delete baseData;
+  return std::optional<std::shared_ptr<AEngineData>>();
 }

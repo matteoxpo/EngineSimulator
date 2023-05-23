@@ -5,18 +5,16 @@
 #include <optional>
 
 #include "../interfaces/AEngineDataSerializer.hpp"
+#include "../interfaces/AEngineTestStand.hpp"
 #include "AEngine.hpp"
 #include "EngineModel.hpp"
 
-class EngineTestStand {
+class EngineTestStand : public AEngineTestStand {
  private:
-  std::unique_ptr<AEngine> engine;
-  std::shared_ptr<AEngineDataSerializer> serializer;
-
  public:
   EngineTestStand(std::unique_ptr<AEngine>& _engine,
                   std::shared_ptr<AEngineDataSerializer> _serializer);
-
-  std::shared_ptr<AEngineData> RunTest(SimulationWorkingMode mode,
-                                       double t = -1);
+  std::optional<std::shared_ptr<AEngineData>> RunTest(EngineTestType testType,
+                                                      double time = -1,
+                                                      bool returnData = false);
 };

@@ -19,6 +19,7 @@ target_include_directories(
     ${CMAKE_CURRENT_SOURCE_DIR}/../engine_lib/interfaces
     ${CMAKE_CURRENT_SOURCE_DIR}/../engine_lib/entity
     ${CMAKE_CURRENT_SOURCE_DIR}/../engine_lib_tests/entity
+    ${CMAKE_CURRENT_SOURCE_DIR}/../engine_lib_tests/entity/serializer
     ${CMAKE_CURRENT_SOURCE_DIR}/../engine_lib_tests/interfaces
 )
 

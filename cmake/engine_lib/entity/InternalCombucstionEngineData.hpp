@@ -20,5 +20,5 @@ struct InternalCombucstionEngineData : public AEngineData {
   InternalCombucstionEngineData() = default;
 
  private:
-  inline void dummy() override {}
+  inline void dummy() const override {}
 };

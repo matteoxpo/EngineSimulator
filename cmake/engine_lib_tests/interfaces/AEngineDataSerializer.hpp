@@ -1,21 +1,30 @@
 #pragma once
-#include <fstream>
-#include <memory>
 
-#include "AEngineData.hpp"
-#include "EngineType.hpp"
+#include <boost/property_tree/json_parser.hpp>
+#include <boost/property_tree/ptree.hpp>
+
 #include "InternalCombucstionEngineData.hpp"
 
 class AEngineDataSerializer {
  protected:
-  std::ostream* outputStream;
-  inline virtual void dummy() = 0;
+  boost::property_tree::ptree serialize_pt;
+  boost::property_tree::ptree deserialize_pt;
 
  public:
-  inline AEngineDataSerializer(std::ostream* _outputStream)
-      : outputStream(_outputStream) {}
-  inline virtual void Serialize(EngineType type,
-                                std::shared_ptr<AEngineData> data) {}
-  inline virtual void Serialize(
-      std::shared_ptr<InternalCombucstionEngineData> data) {}
+  AEngineDataSerializer() = default;
+  AEngineDataSerializer(const AEngineDataSerializer& other) = delete;
+  AEngineDataSerializer(AEngineDataSerializer&& other) = default;
+
+  inline void SetDeserializePt(boost::property_tree::ptree&& _deserialize_pt) {
+    this->deserialize_pt = _deserialize_pt;
+  }
+  inline void SetSerializePt(boost::property_tree::ptree&& _serialize_pt) {
+    this->serialize_pt = _serialize_pt;
+  }
+  virtual AEngineDataSerializer* CreateInstance(
+      boost::property_tree::ptree&& _deserialize_pt,
+      boost::property_tree::ptree&& _serialize_pt) = 0;
+
+  virtual void serialize() = 0;
+  virtual void deserialize() = 0;
 };

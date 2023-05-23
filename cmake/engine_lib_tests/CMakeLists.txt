@@ -7,8 +7,8 @@ add_library(engines_tests STATIC
     entity/EngineTestStand.cpp
     entity/EngineTestStand.hpp
 
-    entity/InternalCombucstionEngineDataSerializer.cpp
-    entity/InternalCombucstionEngineDataSerializer.hpp
+    entity/serializer/InternalCombucstionEngineDataSerializer.cpp
+    entity/serializer/InternalCombucstionEngineDataSerializer.hpp
 
     interfaces/AEngineDataSerializer.hpp
     interfaces/ATestStand.hpp
