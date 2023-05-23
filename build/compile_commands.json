@@ -1,0 +1,27 @@
+[
+{
+  "directory": "/home/xpomin/Prog/EngineSimulator/cmake/build/engine_lib",
+  "command": "/usr/bin/c++   -std=gnu++20 -o CMakeFiles/engines.dir/entity/InternalCombucstionEngine.cpp.o -c /home/xpomin/Prog/EngineSimulator/cmake/engine_lib/entity/InternalCombucstionEngine.cpp",
+  "file": "/home/xpomin/Prog/EngineSimulator/cmake/engine_lib/entity/InternalCombucstionEngine.cpp"
+},
+{
+  "directory": "/home/xpomin/Prog/EngineSimulator/cmake/build/engine_lib",
+  "command": "/usr/bin/c++   -std=gnu++20 -o CMakeFiles/engines.dir/entity/InternalCombucstionEngineData.cpp.o -c /home/xpomin/Prog/EngineSimulator/cmake/engine_lib/entity/InternalCombucstionEngineData.cpp",
+  "file": "/home/xpomin/Prog/EngineSimulator/cmake/engine_lib/entity/InternalCombucstionEngineData.cpp"
+},
+{
+  "directory": "/home/xpomin/Prog/EngineSimulator/cmake/build/engine_lib_tests",
+  "command": "/usr/bin/c++  -I/home/xpomin/Prog/EngineSimulator/cmake/engine_lib -I/home/xpomin/Prog/EngineSimulator/cmake/engine_lib_tests/../engine_lib -I/home/xpomin/Prog/EngineSimulator/cmake/engine_lib_tests/../engine_lib/interfaces -I/home/xpomin/Prog/EngineSimulator/cmake/engine_lib_tests/../engine_lib/entity -std=gnu++20 -o CMakeFiles/engines_tests.dir/entity/EngineTestStand.cpp.o -c /home/xpomin/Prog/EngineSimulator/cmake/engine_lib_tests/entity/EngineTestStand.cpp",
+  "file": "/home/xpomin/Prog/EngineSimulator/cmake/engine_lib_tests/entity/EngineTestStand.cpp"
+},
+{
+  "directory": "/home/xpomin/Prog/EngineSimulator/cmake/build/engine_lib_tests",
+  "command": "/usr/bin/c++  -I/home/xpomin/Prog/EngineSimulator/cmake/engine_lib -I/home/xpomin/Prog/EngineSimulator/cmake/engine_lib_tests/../engine_lib -I/home/xpomin/Prog/EngineSimulator/cmake/engine_lib_tests/../engine_lib/interfaces -I/home/xpomin/Prog/EngineSimulator/cmake/engine_lib_tests/../engine_lib/entity -std=gnu++20 -o CMakeFiles/engines_tests.dir/entity/serializer/InternalCombucstionEngineDataSerializer.cpp.o -c /home/xpomin/Prog/EngineSimulator/cmake/engine_lib_tests/entity/serializer/InternalCombucstionEngineDataSerializer.cpp",
+  "file": "/home/xpomin/Prog/EngineSimulator/cmake/engine_lib_tests/entity/serializer/InternalCombucstionEngineDataSerializer.cpp"
+},
+{
+  "directory": "/home/xpomin/Prog/EngineSimulator/cmake/build/src",
+  "command": "/usr/bin/c++  -I/home/xpomin/Prog/EngineSimulator/cmake/engine_lib -I/home/xpomin/Prog/EngineSimulator/cmake/engine_lib_tests -I/home/xpomin/Prog/EngineSimulator/cmake/src/../engine_lib -I/home/xpomin/Prog/EngineSimulator/cmake/src/../engine_lib/interfaces -I/home/xpomin/Prog/EngineSimulator/cmake/src/../engine_lib/entity -I/home/xpomin/Prog/EngineSimulator/cmake/src/../engine_lib_tests/entity -I/home/xpomin/Prog/EngineSimulator/cmake/src/../engine_lib_tests/entity/serializer -I/home/xpomin/Prog/EngineSimulator/cmake/src/../engine_lib_tests/interfaces -std=gnu++20 -o CMakeFiles/Executable.out.dir/main.cpp.o -c /home/xpomin/Prog/EngineSimulator/cmake/src/main.cpp",
+  "file": "/home/xpomin/Prog/EngineSimulator/cmake/src/main.cpp"
+}
+]
