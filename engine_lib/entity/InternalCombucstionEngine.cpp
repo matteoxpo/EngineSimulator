@@ -10,6 +10,16 @@ InternalCombucstionEngiene::InternalCombucstionEngiene(
   this->type = InternalCombucstion;
 }
 
+InternalCombucstionEngiene::InternalCombucstionEngiene(
+    const InternalCombucstionEngineData* _data)
+    : data(_data),
+      v(this->data.V[0]),
+      m(this->data.M[0]),
+      a(this->m / this->data.I),
+      index(0) {
+  this->type = InternalCombucstion;
+}
+
 void InternalCombucstionEngiene::ResetData() {
   this->data.TRunned = 0;
   this->v = this->data.V[0];

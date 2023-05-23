@@ -12,14 +12,14 @@ void InternalCombucstionEngineDataSerializer::SetData(AEngineData* _data) {
 
 InternalCombucstionEngineDataSerializer::
     InternalCombucstionEngineDataSerializer()
-    : AEngineDataSerializer() {}
+    : AEngineDataSerializer() {
+  this->data = std::make_shared<InternalCombucstionEngineData>();
+}
 
-void InternalCombucstionEngineDataSerializer::serialize(
-    std::basic_ostream<typename std::ostream::char_type>& stream) {
+void InternalCombucstionEngineDataSerializer::serialize(std::string fileName) {
   this->serialize_pt.put("TEngine", this->data->TEngine);
   this->serialize_pt.put("TAir", this->data->TAir);
   this->serialize_pt.put("TRunned", this->data->TRunned);
-  this->serialize_pt.put("EnginePower", this->data->EnginePower);
 
   this->serialize_pt.put("T", this->data->T);
   this->serialize_pt.put("Hm", this->data->Hm);
@@ -40,14 +40,12 @@ void InternalCombucstionEngineDataSerializer::serialize(
   this->serialize_pt.add_child("M", mArray);
   this->serialize_pt.add_child("V", vArray);
 
-  boost::property_tree::write_json(stream, this->serialize_pt);
+  boost::property_tree::write_json(fileName, this->serialize_pt);
 }
 
-void InternalCombucstionEngineDataSerializer::deserialize() {
+AEngineData* InternalCombucstionEngineDataSerializer::deserialize() {
   this->data->TEngine = this->deserialize_pt.get<double>("TEngine");
-  this->data->TAir = this->deserialize_pt.get<double>("TAir");
-  this->data->TRunned = this->deserialize_pt.get<bool>("TRunned");
-  this->data->EnginePower = this->deserialize_pt.get<double>("EnginePower");
+  this->data->TRunned = this->deserialize_pt.get<double>("TRunned");
 
   this->data->T = this->deserialize_pt.get<double>("T");
   this->data->Hm = this->deserialize_pt.get<double>("Hm");
@@ -67,15 +65,14 @@ void InternalCombucstionEngineDataSerializer::deserialize() {
     double val = entry.second.get_value<double>();
     this->data->V.push_back(val);
   }
+  return new InternalCombucstionEngineData(this->data.get());
 }
 
-InternalCombucstionEngineDataSerializer*
+std::unique_ptr<AEngineDataSerializer>
 InternalCombucstionEngineDataSerializer::CreateInstance(
     boost::property_tree::ptree&& _deserialize_pt,
     boost::property_tree::ptree&& _serialize_pt) {
-  InternalCombucstionEngineDataSerializer* instance =
-      new InternalCombucstionEngineDataSerializer();
-
+  auto instance = std::make_unique<InternalCombucstionEngineDataSerializer>();
   instance->SetDeserializePt(std::move(_deserialize_pt));
   instance->SetSerializePt(std::move(_serialize_pt));
   return instance;

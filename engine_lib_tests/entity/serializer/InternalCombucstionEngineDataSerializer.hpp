@@ -14,11 +14,10 @@ class InternalCombucstionEngineDataSerializer : public AEngineDataSerializer {
   void SetData(AEngineData* _data) override;
 
   InternalCombucstionEngineDataSerializer();
-  void serialize(
-      std::basic_ostream<typename std::ostream::char_type>& stream) override;
-  void deserialize() override;
+  void serialize(std::string fileName) override;
+  AEngineData* deserialize() override;
 
-  InternalCombucstionEngineDataSerializer* CreateInstance(
+  std::unique_ptr<AEngineDataSerializer> CreateInstance(
       boost::property_tree::ptree&& _deserialize_pt,
-      boost::property_tree::ptree&& _serialize_pt);
+      boost::property_tree::ptree&& _serialize_pt) override;
 };

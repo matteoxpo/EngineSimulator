@@ -14,6 +14,17 @@ InternalCombucstionEngineData::InternalCombucstionEngineData(
       C(_C) {}
 
 InternalCombucstionEngineData::InternalCombucstionEngineData(
+    const InternalCombucstionEngineData* other)
+    : AEngineData(other->TEngine, other->TAir, other->TRunned),
+      I(other->I),
+      M(other->M),
+      V(other->V),
+      T(other->T),
+      Hm(other->Hm),
+      Hv(other->Hv),
+      C(other->C) {}
+
+InternalCombucstionEngineData::InternalCombucstionEngineData(
     const InternalCombucstionEngineData& other)
     : AEngineData(other.TEngine, other.TAir, other.TRunned),
       I(other.I),

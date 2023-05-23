@@ -15,6 +15,7 @@ struct InternalCombucstionEngineData : public AEngineData {
                                 const double& _Hm, const double& _Hv,
                                 double& _C, const double& _TEngine,
                                 const double& _TAir);
+  InternalCombucstionEngineData(const InternalCombucstionEngineData* other);
   InternalCombucstionEngineData(const InternalCombucstionEngineData& other);
   InternalCombucstionEngineData(const InternalCombucstionEngineData&& other);
   InternalCombucstionEngineData() = default;

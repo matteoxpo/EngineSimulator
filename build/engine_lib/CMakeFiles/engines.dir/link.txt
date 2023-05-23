@@ -1,2 +1,0 @@
-/usr/bin/ar qc libengines.a CMakeFiles/engines.dir/entity/InternalCombucstionEngine.cpp.o CMakeFiles/engines.dir/entity/InternalCombucstionEngineData.cpp.o
-/usr/bin/ranlib libengines.a

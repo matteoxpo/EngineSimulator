@@ -1,2 +1,0 @@
-/usr/bin/ar qc libengines_tests.a CMakeFiles/engines_tests.dir/entity/EngineTestStand.cpp.o CMakeFiles/engines_tests.dir/entity/serializer/InternalCombucstionEngineDataSerializer.cpp.o
-/usr/bin/ranlib libengines_tests.a

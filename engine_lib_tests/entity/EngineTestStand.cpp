@@ -3,15 +3,12 @@
 
 EngineTestStand::EngineTestStand(
     std::unique_ptr<AEngine>& _engine,
-    std::shared_ptr<AEngineDataSerializer> _serializer)
-    : AEngineTestStand(_engine, _serializer) {
-  if (!this->engine) {
-    throw std::invalid_argument("EngineTestStand: engine nullptr");
-  }
-}
+    std::unique_ptr<AEngineDataSerializer>& _serializer)
+    : AEngineTestStand(_engine, _serializer) {}
 
 std::optional<std::shared_ptr<AEngineData>> EngineTestStand::RunTest(
-    EngineTestType testType, double time, bool returnData) {
+    EngineTestType testType, std::string fileName, bool returnData,
+    double time) {
   this->engine->ResetData();
   switch (testType) {
     case SimulateToTime:
@@ -27,7 +24,10 @@ std::optional<std::shared_ptr<AEngineData>> EngineTestStand::RunTest(
   }
 
   AEngineData* baseData = this->engine->GetEngineData();
-  // this->seriazlier->serialize();
+  this->seriazlier->SetData(baseData);
+
+  this->seriazlier->serialize(fileName);
+
   if (returnData) {
     return std::optional<std::shared_ptr<AEngineData>>(baseData);
   }

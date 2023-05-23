@@ -21,6 +21,7 @@ class InternalCombucstionEngiene : public AEngine {
 
  public:
   InternalCombucstionEngiene(const InternalCombucstionEngineData& _data);
+  InternalCombucstionEngiene(const InternalCombucstionEngineData* _data);
   void SimulateTime(double time = -1) override;
   void SimulateStep() override;
   AEngineData* GetEngineData() const override;

@@ -11,12 +11,18 @@
 class AEngineTestStand {
  protected:
   std::unique_ptr<AEngine> engine;
-  std::shared_ptr<AEngineDataSerializer> seriazlier;
+  std::unique_ptr<AEngineDataSerializer> seriazlier;
 
  public:
   inline AEngineTestStand(std::unique_ptr<AEngine>& _engine,
-                          std::shared_ptr<AEngineDataSerializer> _serializer)
-      : engine(_engine.release()), seriazlier(_serializer) {}
+                          std::unique_ptr<AEngineDataSerializer>& _serializer)
+      : engine(_engine.release()), seriazlier(_serializer.release()) {
+    if (!this->engine) {
+      throw std::invalid_argument("EngineTestStand: engine nullptr");
+    }
+  }
 
-  virtual void RunTest(EngineTestType mode, double t = -1) = 0;
+  virtual std::optional<std::shared_ptr<AEngineData>> RunTest(
+      EngineTestType testType, std::string fileName, bool returnData,
+      double time) = 0;
 };
